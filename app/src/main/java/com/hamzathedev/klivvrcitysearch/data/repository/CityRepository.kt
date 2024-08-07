@@ -19,5 +19,9 @@ class CityRepository(private val context: Context) {
         return cities
     }
 
+    fun searchCities(prefix: String): List<City> {
+        return cities.filter { it.name.startsWith(prefix, ignoreCase = true) }
+            .sortedBy { it.name }
+    }
 
 }

@@ -11,8 +11,5 @@ import com.hamzathedev.klivvrcitysearch.data.model.City
 
 @Composable
 fun CityListItem(city: City) {
-    Column(modifier = Modifier.padding(8.dp)) {
-        Text(text = "${city.name}, ${city.country}", style = MaterialTheme.typography.bodyLarge)
-        Text(text = "${city.coord.lat}, ${city.coord.lon}", style = MaterialTheme.typography.bodyMedium)
-    }
+    CityCard(city = city)
 }

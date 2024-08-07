@@ -20,7 +20,14 @@ class CityViewModel(private val repository: CityRepository) : ViewModel() {
     private fun loadCities() {
         viewModelScope.launch {
             repository.loadCitiesFromAsset()
-            _cities.value = repository.getCities()
+            _cities.value = repository.getCities().sortedBy { it.name }
+
+        }
+    }
+
+    fun searchCities(prefix: String) {
+        viewModelScope.launch {
+            _cities.value = repository.searchCities(prefix)
         }
     }
 
