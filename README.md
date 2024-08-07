@@ -22,3 +22,7 @@ An Android app to search and display cities based on a prefix filter using Jetpa
 - Jetpack Compose
 - Android Jetpack libraries
 - JSON serialization library (e.g., kotlinx.serialization)
+
+## Demo
+
+[![KlivvrCitySearch Demo](https://img.youtube.com/vi/TelkbZSvvAg/0.jpg)](https://www.youtube.com/watch?v=TelkbZSvvAg)
