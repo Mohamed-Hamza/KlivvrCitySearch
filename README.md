@@ -10,3 +10,15 @@ An Android app to search and display cities based on a prefix filter using Jetpa
 - Show city and country code as title and coordinates as subtitle.
 - Open location on Google Maps when a city is tapped.
 
+## How to Run
+
+1. Clone the repository.
+2. Open the project in Android Studio.
+3. Build and run the app on an emulator or physical device.
+
+## Dependencies
+
+- Kotlin
+- Jetpack Compose
+- Android Jetpack libraries
+- JSON serialization library (e.g., kotlinx.serialization)
